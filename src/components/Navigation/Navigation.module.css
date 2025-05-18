@@ -1,0 +1,22 @@
+.navList {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.link {
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgb(159, 164, 214);
+  transition: background-color ease-in-out 200ms;
+}
+
+.link:hover {
+  background-color: rgb(55, 86, 151);
+}
+
+.link.active {
+  background-color: rgb(255, 255, 0);
+}
