@@ -14,7 +14,7 @@ const transformMovieData = (data) => {
     title: data.title,
     vote: Math.round(Number(data.vote_average) * 10),
     release_year: data.release_date.slice(0, 4),
-    poster: data.poster ? IMAGE_BASE_URL + data.poster_path : defaultImg,
+    poster: data.poster_path ? IMAGE_BASE_URL + data.poster_path : defaultImg,
     overview: data.overview,
     genres: data.genres.map(({ name }) => name),
   };
